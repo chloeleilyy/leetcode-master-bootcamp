@@ -226,9 +226,9 @@ class Solution:
 
 ## Complexity
 
-Time Complexity:
+Time Complexity: O(n)
 
-Space Complexity:
+Space Complexity: O(1)
 
 
 
@@ -249,12 +249,12 @@ Space Complexity:
 这段代码尝试在遍历列表的同时修改列表的长度，这会导致问题。问题的根源在于，当你从列表中删除元素时，后面的元素会向前移动，这会导致索引与当前遍历的位置不同步。因此，你可能会跳过一些元素，或者在尝试访问某个索引时遇到`IndexError`，因为`l`已经减少了，但是`range(l)`是在循环开始前就计算好的，所以不会动态调整。
 
 ```python
-       l = len(nums) 
-  			for i in range(l):
-            if nums[i] == val:
-                nums.pop(i)
-                l -= 1
-        return l
+l = len(nums) 
+for i in range(l):
+    if nums[i] == val:
+        nums.pop(i)
+        l -= 1
+return l
 ```
 
 一个更安全且有效的方式是从后向前遍历列表，这样即使删除了当前元素，也不会影响到未遍历到的元素的索引。下面是修改后的代码示例：
