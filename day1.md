@@ -198,7 +198,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 - 快指针：寻找新数组的元素 ，新数组就是不含有目标元素的数组
 - 慢指针：指向更新 新数组下标的位置
 
-![27.移除元素-双指针法](./day1.assets/27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0-%E5%8F%8C%E6%8C%87%E9%92%88%E6%B3%95.gif)
+![27.移除元素-双指针法](./images/day1.assets/27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0-%E5%8F%8C%E6%8C%87%E9%92%88%E6%B3%95.gif)
 
 ## Important details
 
@@ -240,7 +240,7 @@ Space Complexity: O(1)
 
 **要知道数组的元素在内存地址中是连续的，不能单独删除数组中的某个元素，只能覆盖。**
 
-![27.移除元素-暴力解法](./day1.assets/27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0-%E6%9A%B4%E5%8A%9B%E8%A7%A3%E6%B3%95.gif)
+![27.移除元素-暴力解法](./images/day1.assets/27.%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0-%E6%9A%B4%E5%8A%9B%E8%A7%A3%E6%B3%95.gif)
 
 
 
